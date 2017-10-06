@@ -7,6 +7,7 @@ public class Item {
     private int codigo;
     private String descricao;
     private Double preco;
+    private Double somaT;
 
     public Item() {
     }
@@ -64,6 +65,20 @@ public class Item {
      */
     public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    /**
+     * @return the somaT
+     */
+    public Double getSomaT() {
+        return somaT;
+    }
+
+    /**
+     * @param somaT the somaT to set
+     */
+    public void setSomaT(Double somaT) {
+        this.somaT = somaT;
     }
     
     

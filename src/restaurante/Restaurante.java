@@ -52,16 +52,6 @@ public class Restaurante {
         janelaCardapio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janelaCardapio.setLocationRelativeTo(null);
 
-     
-
-        
-
-        Pedido[] mesas = new Pedido[10];
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Mesas : " + mesas[i]);
-        }
-
     }
 
    
