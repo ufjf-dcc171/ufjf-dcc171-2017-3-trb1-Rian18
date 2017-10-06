@@ -19,6 +19,40 @@ public class Restaurante {
         
         Inicio janelaInicio = new Inicio();
         janelaInicio.setVisible(true); //ideal colocar por último 
+<<<<<<< HEAD
+        janelaInicio.setSize(470,850);
+        janelaInicio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        janelaInicio.setLocationRelativeTo(null); // Tela aparece no centro 
+   
+
+        
+       //Para Teste
+        Pedido[] mesas = new Pedido[10];
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Mesas : " + mesas[i]);
+        }
+
+    }
+
+    public static void telaPedidos()
+    {
+        JanelaPedido janelaPedidos = new JanelaPedido();
+        janelaPedidos.setVisible(true); //ideal colocar por último 
+        janelaPedidos.setSize(470, 600);
+        janelaPedidos.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        janelaPedidos.setLocationRelativeTo(null);
+    
+    }
+    
+    public static void telaCardapio()
+    {
+       Cardapio janelaCardapio = new Cardapio();
+        janelaCardapio.setVisible(true); //ideal colocar por último 
+        janelaCardapio.setSize(470,600);
+        janelaCardapio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        janelaCardapio.setLocationRelativeTo(null);
+=======
         janelaInicio.setSize(470,600);
         janelaInicio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janelaInicio.setLocationRelativeTo(null); // Tela aparece no centro 
@@ -40,6 +74,7 @@ public class Restaurante {
         janelaPedidos.setSize(470, 600);
         janelaPedidos.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         janelaPedidos.setLocationRelativeTo(null);
+>>>>>>> origin/master
     
     }
 }
