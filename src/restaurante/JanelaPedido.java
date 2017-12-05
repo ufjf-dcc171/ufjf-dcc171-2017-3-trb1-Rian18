@@ -85,10 +85,8 @@ public class JanelaPedido extends JFrame {
         btnAdicionar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 modelo.addElement(cmbItens.getSelectedItem());
-                listaItem.add((Item) cmbItens.getSelectedItem());
-                mesas.get(getIndice()).setItens(listaItem);
+                mesas.get(getIndice()).getItens()..add((Item) cmbItens.getSelectedItem());
 
             }
         });
@@ -232,9 +230,7 @@ public class JanelaPedido extends JFrame {
                 Date dataInicial = new Date(horarioInicial);
                 setDataInicial(data);
                 lbl2.setText(dataInicial.toString());
-
-                listaItem = new ArrayList<>();
-                mesas.add(numero, new Pedido(dataInicial, null, true, listaItem));
+                mesas.add(numero, new Pedido(dataInicial, null, true, new ArrayList<>()));
 
                 System.out.println("Iniciar Mesa" + numero);
                 System.out.println("Dados: " + getIndice() + "  " + mesas.get(numero).getHoraInicio() + "  " + mesas.get(numero).isStatus());
